@@ -1,0 +1,162 @@
+:root {
+    --colorBg: #eb596e;
+    --colorMain: #ffe227;
+    --colorSecond: #121013;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--colorSecond);
+}
+
+body {
+    background-color: var(--colorBg);
+}
+
+header {
+    background-color: var(--colorMain);
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.crud {
+    background-color: var(--colorMain);
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.crud h2 {
+    margin-bottom: 2rem;
+}
+
+.crud form {
+    width: 100%;
+}
+
+.crud form input {
+    width: 100%;
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.crud form input:last-child {
+    background-color: var(--colorBg);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.list__task {
+    background-color: var(--colorMain);
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.search form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.search form input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.search form i {
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.list__task h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    flex: 3.3;
+    padding: 0.6rem 0;
+    border-bottom: 2px solid var(--colorBg);
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .crud {
+        width: 60%;
+    }
+
+    .crud button {
+        width: 40%;
+    }
+
+    .list__task {
+        width: 60%;
+    }
+}
+
+.message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(101, 187, 101, 0.9);
+    border: 1px solid green;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: var(--colorSecond);
+    font-weight: 700;
+}
+
+.remove__message {
+    display: none;
+}
+
+footer {
+    bottom: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a {
+    text-decoration: none;
+}
